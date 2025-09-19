@@ -1,0 +1,12 @@
+{
+    "name": "Practica_1",
+    "description": "practica de clases",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}
