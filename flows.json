@@ -190,7 +190,7 @@
         "repair": false,
         "outputs": 2,
         "x": 590,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "2694c8761dcaf3aa"
@@ -220,7 +220,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "7a656f10bd26a471"
@@ -247,7 +247,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "7a656f10bd26a471"
@@ -720,7 +720,7 @@
         "showBorder": true,
         "showGlow": true,
         "x": 930,
-        "y": 260,
+        "y": 240,
         "wires": []
     },
     {
