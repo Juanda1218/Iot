@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "32eb6b2be64393fe",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "8859b2ea8162a35f",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -137,6 +145,130 @@
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
+    },
+    {
+        "id": "78ce704e84252587",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9701b41e359466f4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e5a2250ecedbbeae",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "95123407bd8dcaf2",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
         "id": "a67c7650a9f6b1a2",
@@ -992,6 +1124,186 @@
         "wires": [
             [
                 "36e5756d0abb3364"
+            ]
+        ]
+    },
+    {
+        "id": "cc3a6d41aedcb9e5",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/JuanDiaz",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "78ce704e84252587",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "66eee38a15401ec6"
+            ]
+        ]
+    },
+    {
+        "id": "66eee38a15401ec6",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "89ab25da783f3177",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/Juan/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e5a2250ecedbbeae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "cf9923820344cad1"
+            ]
+        ]
+    },
+    {
+        "id": "cf9923820344cad1",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7b55f0e528d45ae4",
+        "type": "inject",
+        "z": "32eb6b2be64393fe",
+        "name": "topico 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Utmach/FIC/IoT/6A/Juan/1",
+        "payload": "{\"temp\":23.7,\"hum\":88.2,\"lat\":25.1,\"log\":0.58,\"nombre\":\"Juan Díaz 1\"}",
+        "payloadType": "json",
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "85df7674f8852f33"
+            ]
+        ]
+    },
+    {
+        "id": "85df7674f8852f33",
+        "type": "mqtt out",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "95123407bd8dcaf2",
+        "x": 690,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a0ca8aa7f1d5eae9",
+        "type": "inject",
+        "z": "32eb6b2be64393fe",
+        "name": "Topico 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Utmach/FIC/IoT/6A/Juan/2",
+        "payload": "{\"temp\":23.7,\"hum\":88.2,\"lat\":25.1,\"log\":0.58,\"nombre\":\"Juan Díaz 2\"}",
+        "payloadType": "json",
+        "x": 260,
+        "y": 440,
+        "wires": [
+            [
+                "85df7674f8852f33"
+            ]
+        ]
+    },
+    {
+        "id": "6ae756119f189da1",
+        "type": "inject",
+        "z": "32eb6b2be64393fe",
+        "name": "topico 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Utmach/FIC/IoT/6A/Juan/3",
+        "payload": "{\"temp\":23.7,\"hum\":88.2,\"lat\":25.1,\"log\":0.58,\"nombre\":\"Juan Díaz 3\"}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "85df7674f8852f33"
             ]
         ]
     }
