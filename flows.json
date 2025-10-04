@@ -24,6 +24,108 @@
         "env": []
     },
     {
+        "id": "7339732015bc2bf6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6e653cee0e7bb1c3",
+        "type": "group",
+        "z": "7339732015bc2bf6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "882306bca8d3dc6e",
+            "090c227d64f13300",
+            "fe034084556bdc90"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 752,
+        "h": 162
+    },
+    {
+        "id": "dd38ef426ad2076e",
+        "type": "group",
+        "z": "7339732015bc2bf6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c3e3127852e0cb94",
+            "201b80d1418bab2a"
+        ],
+        "x": 154,
+        "y": 519,
+        "w": 432,
+        "h": 82
+    },
+    {
+        "id": "7c800d21244f1bc7",
+        "type": "group",
+        "z": "7339732015bc2bf6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5a755bbcd9420fcd",
+            "0c519dd1d8799079",
+            "9ae140728b4e65ea",
+            "f3d6660be61691f4"
+        ],
+        "x": 34,
+        "y": 599,
+        "w": 912,
+        "h": 82
+    },
+    {
+        "id": "5757d4698be50e98",
+        "type": "group",
+        "z": "7339732015bc2bf6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9aee2ecf46f92802",
+            "59503af5c5a04b68",
+            "2808c32b80eb08ec",
+            "c06ac4465c3a7d5b",
+            "7d747c2bf1343f49"
+        ],
+        "x": -6,
+        "y": 739,
+        "w": 792,
+        "h": 82
+    },
+    {
         "id": "8859b2ea8162a35f",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -219,13 +321,55 @@
         ],
         "order": 1,
         "className": "",
-        "visible": "true",
+        "visible": false,
         "disabled": "false"
     },
     {
         "id": "12515b335e4dbe38",
         "type": "ui-group",
         "name": "Gupo 1",
+        "page": "265cec983cb7d78c",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": false,
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "eca0f1cb001a1d4a",
+        "type": "ui-group",
+        "name": "grupo 2",
+        "page": "265cec983cb7d78c",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": false,
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1c5549203cee4893",
+        "type": "ui-group",
+        "name": "HiveMQ",
+        "page": "265cec983cb7d78c",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "22ec23dfeb90f19b",
+        "type": "ui-group",
+        "name": "Mosquito",
         "page": "265cec983cb7d78c",
         "width": 6,
         "height": 1,
@@ -237,49 +381,11 @@
         "groupType": "default"
     },
     {
-        "id": "cc3a6d41aedcb9e5",
-        "type": "mqtt in",
-        "z": "32eb6b2be64393fe",
-        "name": "",
-        "topic": "Utmach/FIC/IoT/6A/JuanDiaz",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "78ce704e84252587",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 300,
-        "y": 160,
-        "wires": [
-            [
-                "66eee38a15401ec6"
-            ]
-        ]
-    },
-    {
-        "id": "66eee38a15401ec6",
-        "type": "debug",
-        "z": "32eb6b2be64393fe",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "89ab25da783f3177",
         "type": "mqtt in",
         "z": "32eb6b2be64393fe",
         "name": "",
-        "topic": "Utmach/FIC/IoT/6A/Juan/#",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Temperatura",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "e5a2250ecedbbeae",
@@ -287,11 +393,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 290,
-        "y": 240,
+        "x": 430,
+        "y": 300,
         "wires": [
             [
-                "cf9923820344cad1"
+                "e5616b3131f7ccd9",
+                "71273b75b4095d63"
             ]
         ]
     },
@@ -307,15 +414,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 240,
+        "x": 1120,
+        "y": 260,
         "wires": []
     },
     {
         "id": "7b55f0e528d45ae4",
         "type": "inject",
         "z": "32eb6b2be64393fe",
-        "name": "topico 1",
+        "name": "Temperatura",
         "props": [
             {
                 "p": "payload"
@@ -325,18 +432,18 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "10",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
-        "topic": "Utmach/FIC/IoT/6A/Juan/1",
-        "payload": "{\"temp\":23.7,\"hum\":88.2,\"lat\":25.1,\"log\":0.58,\"nombre\":\"Juan Díaz 1\"}",
-        "payloadType": "json",
-        "x": 250,
-        "y": 360,
+        "onceDelay": "5",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Temperatura",
+        "payload": "Sensor de temperatura",
+        "payloadType": "str",
+        "x": 360,
+        "y": 580,
         "wires": [
             [
-                "85df7674f8852f33"
+                "97498cd2e2d2cf33"
             ]
         ]
     },
@@ -354,15 +461,15 @@
         "correl": "",
         "expiry": "",
         "broker": "95123407bd8dcaf2",
-        "x": 690,
-        "y": 360,
+        "x": 990,
+        "y": 620,
         "wires": []
     },
     {
         "id": "a0ca8aa7f1d5eae9",
         "type": "inject",
         "z": "32eb6b2be64393fe",
-        "name": "Topico 2",
+        "name": "Humedad",
         "props": [
             {
                 "p": "payload"
@@ -372,15 +479,115 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "10",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
-        "topic": "Utmach/FIC/IoT/6A/Juan/2",
-        "payload": "{\"temp\":23.7,\"hum\":88.2,\"lat\":25.1,\"log\":0.58,\"nombre\":\"Juan Díaz 2\"}",
-        "payloadType": "json",
-        "x": 260,
-        "y": 440,
+        "onceDelay": "5",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Humedad",
+        "payload": "Sensor de Humedad",
+        "payloadType": "str",
+        "x": 370,
+        "y": 660,
+        "wires": [
+            [
+                "df0e3e54eee5593e"
+            ]
+        ]
+    },
+    {
+        "id": "97498cd2e2d2cf33",
+        "type": "random",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "low": 1,
+        "high": "50",
+        "inte": "true",
+        "property": "payload",
+        "x": 540,
+        "y": 580,
+        "wires": [
+            [
+                "d2bd789954f55126"
+            ]
+        ]
+    },
+    {
+        "id": "e5616b3131f7ccd9",
+        "type": "ui-gauge",
+        "z": "32eb6b2be64393fe",
+        "name": "Temperatura",
+        "group": "22ec23dfeb90f19b",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "cf9923820344cad1"
+            ]
+        ]
+    },
+    {
+        "id": "d2bd789954f55126",
+        "type": "change",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 580,
         "wires": [
             [
                 "85df7674f8852f33"
@@ -388,10 +595,266 @@
         ]
     },
     {
-        "id": "6ae756119f189da1",
+        "id": "df0e3e54eee5593e",
+        "type": "random",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "low": 1,
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 560,
+        "y": 660,
+        "wires": [
+            [
+                "134db491ccf8462d"
+            ]
+        ]
+    },
+    {
+        "id": "db5c07f5693daf0b",
+        "type": "ui-gauge",
+        "z": "32eb6b2be64393fe",
+        "name": "Humedad",
+        "group": "22ec23dfeb90f19b",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 920,
+        "y": 420,
+        "wires": [
+            [
+                "37994362727fbb48"
+            ]
+        ]
+    },
+    {
+        "id": "134db491ccf8462d",
+        "type": "change",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 660,
+        "wires": [
+            [
+                "85df7674f8852f33"
+            ]
+        ]
+    },
+    {
+        "id": "4c94acc2272048d8",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Humedad",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e5a2250ecedbbeae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "db5c07f5693daf0b",
+                "71273b75b4095d63"
+            ]
+        ]
+    },
+    {
+        "id": "37994362727fbb48",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "71273b75b4095d63",
+        "type": "ui-chart",
+        "z": "32eb6b2be64393fe",
+        "group": "22ec23dfeb90f19b",
+        "name": "",
+        "label": "chart",
+        "order": 5,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Temperatura",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Humedad",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "c92460640d993e87"
+            ]
+        ]
+    },
+    {
+        "id": "c92460640d993e87",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c859c04ee2a96200",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "78ce704e84252587",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 430,
+        "y": 1080,
+        "wires": [
+            [
+                "1b28f53c8d2ec4a9",
+                "546cedb131cae7c0"
+            ]
+        ]
+    },
+    {
+        "id": "d83f917bdbfc7754",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "a456d8c473027604",
         "type": "inject",
         "z": "32eb6b2be64393fe",
-        "name": "topico 3",
+        "name": "Temperatura",
         "props": [
             {
                 "p": "payload"
@@ -401,18 +864,540 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "10",
         "crontab": "",
         "once": false,
-        "onceDelay": 0.1,
-        "topic": "Utmach/FIC/IoT/6A/Juan/3",
-        "payload": "{\"temp\":23.7,\"hum\":88.2,\"lat\":25.1,\"log\":0.58,\"nombre\":\"Juan Díaz 3\"}",
-        "payloadType": "json",
-        "x": 230,
-        "y": 520,
+        "onceDelay": "5",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Temperatura",
+        "payload": "Sensor de temperatura",
+        "payloadType": "str",
+        "x": 380,
+        "y": 820,
         "wires": [
             [
-                "85df7674f8852f33"
+                "a4fa5c1fa3dc72ea"
+            ]
+        ]
+    },
+    {
+        "id": "765275ca2720fd35",
+        "type": "mqtt out",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "78ce704e84252587",
+        "x": 1010,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "de8dfd28f5323750",
+        "type": "inject",
+        "z": "32eb6b2be64393fe",
+        "name": "Humedad",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Humedad",
+        "payload": "Sensor de Humedad",
+        "payloadType": "str",
+        "x": 390,
+        "y": 900,
+        "wires": [
+            [
+                "f87ecdf79f88c16f"
+            ]
+        ]
+    },
+    {
+        "id": "a4fa5c1fa3dc72ea",
+        "type": "random",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "low": 1,
+        "high": "50",
+        "inte": "true",
+        "property": "payload",
+        "x": 560,
+        "y": 820,
+        "wires": [
+            [
+                "2232c8291d2cff3c"
+            ]
+        ]
+    },
+    {
+        "id": "1b28f53c8d2ec4a9",
+        "type": "ui-gauge",
+        "z": "32eb6b2be64393fe",
+        "name": "Temperatura",
+        "group": "1c5549203cee4893",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 770,
+        "y": 1040,
+        "wires": [
+            [
+                "d83f917bdbfc7754"
+            ]
+        ]
+    },
+    {
+        "id": "2232c8291d2cff3c",
+        "type": "change",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 820,
+        "wires": [
+            [
+                "765275ca2720fd35"
+            ]
+        ]
+    },
+    {
+        "id": "f87ecdf79f88c16f",
+        "type": "random",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "low": 1,
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 580,
+        "y": 900,
+        "wires": [
+            [
+                "9fa8c94af62b4a93"
+            ]
+        ]
+    },
+    {
+        "id": "ec82b55beec06eee",
+        "type": "ui-gauge",
+        "z": "32eb6b2be64393fe",
+        "name": "Humedad",
+        "group": "1c5549203cee4893",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 780,
+        "y": 1200,
+        "wires": [
+            [
+                "667c410853dc187c"
+            ]
+        ]
+    },
+    {
+        "id": "9fa8c94af62b4a93",
+        "type": "change",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 900,
+        "wires": [
+            [
+                "765275ca2720fd35"
+            ]
+        ]
+    },
+    {
+        "id": "20547fcfdb020288",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Humedad",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "78ce704e84252587",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 1160,
+        "wires": [
+            [
+                "ec82b55beec06eee",
+                "546cedb131cae7c0"
+            ]
+        ]
+    },
+    {
+        "id": "667c410853dc187c",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "546cedb131cae7c0",
+        "type": "ui-chart",
+        "z": "32eb6b2be64393fe",
+        "group": "1c5549203cee4893",
+        "name": "",
+        "label": "chart",
+        "order": 4,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Temperatura",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Humedad",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 770,
+        "y": 1120,
+        "wires": [
+            [
+                "33f91332f301cd92"
+            ]
+        ]
+    },
+    {
+        "id": "33f91332f301cd92",
+        "type": "debug",
+        "z": "32eb6b2be64393fe",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "e54e7871a624a51f",
+        "type": "ui-button",
+        "z": "32eb6b2be64393fe",
+        "group": "22ec23dfeb90f19b",
+        "name": "Texto",
+        "label": "button",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": true,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Texto",
+        "topicType": "str",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 550,
+        "y": 740,
+        "wires": [
+            [
+                "c519167fc5c817ca"
+            ]
+        ]
+    },
+    {
+        "id": "56e80b627bc99541",
+        "type": "ui-text",
+        "z": "32eb6b2be64393fe",
+        "group": "22ec23dfeb90f19b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Datos",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 750,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "01b1ffdd45f53091",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Texto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e5a2250ecedbbeae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 500,
+        "wires": [
+            [
+                "56e80b627bc99541"
+            ]
+        ]
+    },
+    {
+        "id": "c519167fc5c817ca",
+        "type": "change",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Nombre\":\"Juan Díaz\",\"Fecha nacimiento\":\"18/12/20004\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 740,
+        "wires": [
+            [
+                "85df7674f8852f33",
+                "765275ca2720fd35"
+            ]
+        ]
+    },
+    {
+        "id": "3c758a86211693a2",
+        "type": "ui-text",
+        "z": "32eb6b2be64393fe",
+        "group": "1c5549203cee4893",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Datos",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 790,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "e1454d5e7dd2980d",
+        "type": "mqtt in",
+        "z": "32eb6b2be64393fe",
+        "name": "",
+        "topic": "Utmach/FIC/IoT/6A/Juan/Texto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "78ce704e84252587",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 450,
+        "y": 980,
+        "wires": [
+            [
+                "3c758a86211693a2"
             ]
         ]
     },
@@ -495,7 +1480,7 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 230,
+        "x": 190,
         "y": 140,
         "wires": [
             [
@@ -553,12 +1538,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
+        "x": 490,
         "y": 240,
         "wires": [
-            [
-                "30d204eaf1f0b5c7"
-            ]
+            []
         ]
     },
     {
@@ -583,28 +1566,392 @@
         "x": 480,
         "y": 320,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "882306bca8d3dc6e",
+        "type": "openweathermap",
+        "z": "7339732015bc2bf6",
+        "g": "6e653cee0e7bb1c3",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Machala",
+        "country": "Ecuador",
+        "language": "es",
+        "x": 320,
+        "y": 140,
+        "wires": [
             [
-                "a2375b95b30334b1"
+                "fe034084556bdc90"
             ]
         ]
     },
     {
-        "id": "30d204eaf1f0b5c7",
+        "id": "090c227d64f13300",
+        "type": "inject",
+        "z": "7339732015bc2bf6",
+        "g": "6e653cee0e7bb1c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "882306bca8d3dc6e"
+            ]
+        ]
+    },
+    {
+        "id": "fe034084556bdc90",
+        "type": "debug",
+        "z": "7339732015bc2bf6",
+        "g": "6e653cee0e7bb1c3",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c3e3127852e0cb94",
+        "type": "openweathermap in",
+        "z": "7339732015bc2bf6",
+        "g": "dd38ef426ad2076e",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Guayaquil",
+        "country": "Ecuador",
+        "language": "es",
+        "x": 240,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "201b80d1418bab2a",
+        "type": "debug",
+        "z": "7339732015bc2bf6",
+        "g": "dd38ef426ad2076e",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5a755bbcd9420fcd",
+        "type": "inject",
+        "z": "7339732015bc2bf6",
+        "g": "7c800d21244f1bc7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "0c519dd1d8799079"
+            ]
+        ]
+    },
+    {
+        "id": "0c519dd1d8799079",
+        "type": "change",
+        "z": "7339732015bc2bf6",
+        "g": "7c800d21244f1bc7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "id",
+                "pt": "msg",
+                "to": "3654533",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "APPID",
+                "pt": "msg",
+                "to": "418f6a7c6f606a33ac892156cdd1d625",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 640,
+        "wires": [
+            [
+                "9ae140728b4e65ea"
+            ]
+        ]
+    },
+    {
+        "id": "9ae140728b4e65ea",
+        "type": "http request",
+        "z": "7339732015bc2bf6",
+        "g": "7c800d21244f1bc7",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://api.openweathermap.org/data/2.5/forecast?id={{{id}}}&APPID={{{APPID}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 640,
+        "wires": [
+            [
+                "f3d6660be61691f4"
+            ]
+        ]
+    },
+    {
+        "id": "f3d6660be61691f4",
+        "type": "debug",
+        "z": "7339732015bc2bf6",
+        "g": "7c800d21244f1bc7",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9aee2ecf46f92802",
+        "type": "inject",
+        "z": "7339732015bc2bf6",
+        "g": "5757d4698be50e98",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 780,
+        "wires": [
+            [
+                "c06ac4465c3a7d5b"
+            ]
+        ]
+    },
+    {
+        "id": "59503af5c5a04b68",
+        "type": "http request",
+        "z": "7339732015bc2bf6",
+        "g": "5757d4698be50e98",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://api.weatherstack.com/current?access_key=397d3c11974937249134fe24f5dd6d0c&query=Machala",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 780,
+        "wires": [
+            [
+                "2808c32b80eb08ec"
+            ]
+        ]
+    },
+    {
+        "id": "2808c32b80eb08ec",
+        "type": "json",
+        "z": "7339732015bc2bf6",
+        "g": "5757d4698be50e98",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 780,
+        "wires": [
+            [
+                "44b21eb642f61cf4",
+                "7be2703d272408b0",
+                "3f4a0a5d6278b1cc",
+                "e495855f1dbdb6bd",
+                "a1d94622d02e40f1"
+            ]
+        ]
+    },
+    {
+        "id": "2da31b4434fcc630",
         "type": "ui-gauge",
-        "z": "b73ea28be61e0b1e",
+        "z": "7339732015bc2bf6",
         "name": "Temperatura",
-        "group": "12515b335e4dbe38",
-        "order": 1,
+        "group": "eca0f1cb001a1d4a",
+        "order": 2,
         "value": "payload",
         "valueType": "msg",
         "width": 3,
         "height": 3,
         "gtype": "gauge-half",
         "gstyle": "needle",
-        "title": "Temperatura",
+        "title": "gauge",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
-        "units": "°C",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1130,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7be2703d272408b0",
+        "type": "change",
+        "z": "7339732015bc2bf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.current.temperature",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 840,
+        "wires": [
+            [
+                "2da31b4434fcc630"
+            ]
+        ]
+    },
+    {
+        "id": "d9d559cca8c5933e",
+        "type": "ui-gauge",
+        "z": "7339732015bc2bf6",
+        "name": "Humedad",
+        "group": "eca0f1cb001a1d4a",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
         "icon": "",
         "prefix": "",
         "suffix": "",
@@ -622,7 +1969,7 @@
                 "textType": "label"
             },
             {
-                "from": "60",
+                "from": "70",
                 "color": "#ea5353",
                 "text": "",
                 "textType": "label"
@@ -636,64 +1983,237 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 690,
-        "y": 240,
+        "x": 1140,
+        "y": 800,
         "wires": [
             []
         ]
     },
     {
-        "id": "a2375b95b30334b1",
-        "type": "ui-gauge",
-        "z": "b73ea28be61e0b1e",
-        "name": "Humedad",
-        "group": "12515b335e4dbe38",
-        "order": 2,
-        "value": "payload",
-        "valueType": "jsonata",
-        "width": 3,
-        "height": 3,
-        "gtype": "gauge-half",
-        "gstyle": "needle",
-        "title": "Humedad",
-        "alwaysShowTitle": false,
-        "floatingTitlePosition": "top-left",
-        "units": "%",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
+        "id": "44b21eb642f61cf4",
+        "type": "change",
+        "z": "7339732015bc2bf6",
+        "name": "",
+        "rules": [
             {
-                "from": "0",
-                "color": "#d13805",
-                "text": "",
-                "textType": "label"
-            },
-            {
-                "from": "30",
-                "color": "#ffc800",
-                "text": "",
-                "textType": "label"
-            },
-            {
-                "from": "70",
-                "color": "#3def0b",
-                "text": "",
-                "textType": "label"
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.current.humidity",
+                "tot": "jsonata"
             }
         ],
-        "min": 0,
-        "max": "100",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 680,
-        "y": 320,
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 800,
         "wires": [
-            []
+            [
+                "d9d559cca8c5933e"
+            ]
+        ]
+    },
+    {
+        "id": "3f4a0a5d6278b1cc",
+        "type": "change",
+        "z": "7339732015bc2bf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.current.wind_degree",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 900,
+        "wires": [
+            [
+                "859d97e338a71894"
+            ]
+        ]
+    },
+    {
+        "id": "e495855f1dbdb6bd",
+        "type": "change",
+        "z": "7339732015bc2bf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.current.is_day",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 960,
+        "wires": [
+            [
+                "49f63adb19fd0a2f"
+            ]
+        ]
+    },
+    {
+        "id": "49f63adb19fd0a2f",
+        "type": "ui-led",
+        "z": "7339732015bc2bf6",
+        "name": "",
+        "group": "12515b335e4dbe38",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Dia o Noche",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "states": [
+            {
+                "value": "no",
+                "valueType": "str",
+                "color": "#000000"
+            },
+            {
+                "value": "yes",
+                "valueType": "str",
+                "color": "#fbff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 1110,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "859d97e338a71894",
+        "type": "ui-text",
+        "z": "7339732015bc2bf6",
+        "group": "12515b335e4dbe38",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Direccion: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1140,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a1d94622d02e40f1",
+        "type": "debug",
+        "z": "7339732015bc2bf6",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "c06ac4465c3a7d5b",
+        "type": "ui-text-input",
+        "z": "7339732015bc2bf6",
+        "g": "5757d4698be50e98",
+        "group": "eca0f1cb001a1d4a",
+        "name": "",
+        "label": "Ciudad",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 240,
+        "y": 780,
+        "wires": [
+            [
+                "7d747c2bf1343f49"
+            ]
+        ]
+    },
+    {
+        "id": "7d747c2bf1343f49",
+        "type": "ui-button",
+        "z": "7339732015bc2bf6",
+        "g": "5757d4698be50e98",
+        "group": "eca0f1cb001a1d4a",
+        "name": "",
+        "label": "Aceptar",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 380,
+        "y": 780,
+        "wires": [
+            [
+                "59503af5c5a04b68"
+            ]
         ]
     }
 ]
